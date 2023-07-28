@@ -1,5 +1,3 @@
-// Use ES6 features and separate JavaScript logic
-
 const playlist = [];
 
 function addSongToPlaylist() {
@@ -35,10 +33,10 @@ function updateSongLists() {
     const allSongsList = document.getElementById("all-songs-list");
     const mostPlayedSongsList = document.getElementById("most-played-songs-list");
 
-    // Get the current songs displayed in the "Show All Songs" section
+    // Get the current songs displayed in the "All Songs" section
     const currentAllSongs = allSongsList.querySelectorAll("li");
 
-    // Clear the "Show All Songs" and "Show Your Most Played Songs" sections
+    // Clear the "All Songs" and "Most Played" sections
     allSongsList.innerHTML = "";
     mostPlayedSongsList.innerHTML = "";
 
@@ -54,14 +52,14 @@ function updateSongLists() {
         listItem.textContent = `${song.title} - ${song.artist} (${song.playCount} plays)`;
         listItem.appendChild(playButton);
 
-        // Add the song to the "Show All Songs" section
+        // Add the song to the "All Songs" section
         allSongsList.appendChild(listItem);
     });
 
     // Sort the playlist by play count (descending order)
     sortSongsByMostPlayed();
 
-    // Repopulate the "Show Your Most Played Songs" section
+    // Repopulate the "Most Played" section
     playlist.slice(0, 3).forEach((song, index) => {
         const listItem = document.createElement("li");
         listItem.textContent = `${song.title} - ${song.artist} (${song.playCount} plays)`;

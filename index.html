@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Wannabe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Spotify Wannabe</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>All Songs</h2>
+            <ul class="song-list" id="all-songs-list">
+                <!-- List items for songs will be added here -->
+            </ul>
+        </section>
+
+        <section>
+            <h2>Most Played</h2>
+            <ul class="song-list" id="most-played-songs-list">
+                <!-- Most played songs will be added here -->
+            </ul>
+        </section>
+
+        <section>
+            <h2>Add Songs to Playlist</h2>
+            <form onsubmit="addSongToPlaylist(); return false;">
+                <input type="text" id="song-title" placeholder="Enter song title">
+                <input type="text" id="artist-name" placeholder="Enter artist name">
+                <button type="submit">Add</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Nadhif</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

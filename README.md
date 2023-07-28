@@ -1,5 +1,4 @@
-# modul-2.3-gigih
-# Spotify KW99
+# modul-2.3-gigih (Spotify KW99)
 
 A highly-simplified Spotify-like web application designed using plain HTML, CSS, and JavaScript.
 
